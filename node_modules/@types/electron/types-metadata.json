@@ -1,0 +1,27 @@
+{
+    "authors": "jedmao <https://github.com/jedmao/>, rhysd <https://rhysd.github.io>, Milan Burda <https://github.com/miniak/>",
+    "definitionFilename": "index.d.ts",
+    "libraryDependencies": [
+        "node"
+    ],
+    "moduleDependencies": [],
+    "libraryMajorVersion": "1",
+    "libraryMinorVersion": "4",
+    "libraryName": "Electron v1.4.2",
+    "typingsPackageName": "electron",
+    "projectName": "http://electron.atom.io/",
+    "sourceRepoURL": "https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+    "sourceBranch": "types-2.0",
+    "kind": "Mixed",
+    "globals": [
+        "Electron"
+    ],
+    "declaredModules": [
+        "electron"
+    ],
+    "files": [
+        "index.d.ts"
+    ],
+    "hasPackageJson": false,
+    "contentHash": "f86935aab80f4eb764b1e8e6cb00f4053ad45b5e65923a4cef2cfd449ff418d1"
+}

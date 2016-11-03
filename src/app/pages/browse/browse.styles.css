@@ -1,0 +1,24 @@
+.select-default-filters-card {
+    display: flex !important;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.date-picker {
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    border-radius: 5px !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    box-shadow: none !important;
+    font-size: 14px !important;
+}
+
+.submit-filters-btn {
+    width: 80%;
+}
+
+.input-field {
+    font-size: 12px;
+    border-radius: 10px;
+    height: 40px;
+}

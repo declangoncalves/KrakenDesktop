@@ -1,0 +1,1031 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   .bootstraprc
+#	new file:   .editorconfig
+#	new file:   .github/CONTRIBUTING.md
+#	new file:   .github/ISSUE_TEMPLATE.md
+#	new file:   .github/PULL_REQUEST_TEMPLATE.md
+#	new file:   .travis.yml
+#	new file:   .vscode/launch.json
+#	new file:   .vscode/settings.json
+#	new file:   CHANGELOG.md
+#	new file:   Dockerfile
+#	new file:   LICENSE
+#	new file:   build.sh
+#	new file:   config/electron/webpack.electron.common.js
+#	new file:   config/electron/webpack.electron.dev.js
+#	new file:   config/electron/webpack.electron.prod.js
+#	new file:   config/electron/webpack.renderer.common.js
+#	new file:   config/electron/webpack.renderer.dev.js
+#	new file:   config/electron/webpack.renderer.prod.js
+#	new file:   config/head-config.common.js
+#	new file:   config/helpers.js
+#	new file:   config/html-elements-plugin/index.js
+#	new file:   config/modules/angular2-hmr-prod.js
+#	new file:   config/webpack.common.js
+#	new file:   config/webpack.dev.js
+#	new file:   config/webpack.prod.js
+#	new file:   dist/webpack-assets.json
+#	new file:   docs/config.json
+#	new file:   docs/contents/articles/001-getting-started/index.md
+#	new file:   docs/contents/articles/002-installation-guidelines/index.md
+#	new file:   docs/contents/articles/011-changing-color-scheme/index.md
+#	new file:   docs/contents/articles/011-changing-color-scheme/new-color-scheme.png
+#	new file:   docs/contents/articles/012-project-structure/index.md
+#	new file:   docs/contents/articles/013-create-new-page/index.md
+#	new file:   docs/contents/articles/014-switch-to-blur-theme/index.md
+#	new file:   docs/contents/articles/015-sidebar/index.md
+#	new file:   docs/contents/articles/016-spinner/index.md
+#	new file:   docs/contents/css/main.scss
+#	new file:   docs/contents/images/favicon.png
+#	new file:   docs/contents/images/logo.png
+#	new file:   docs/contents/images/sky-preview.png
+#	new file:   docs/contents/images/why-design.svg
+#	new file:   docs/contents/images/why-practices.svg
+#	new file:   docs/contents/images/why-structure.svg
+#	new file:   docs/contents/index.json
+#	new file:   docs/package.json
+#	new file:   docs/plugins/paginator.coffee
+#	new file:   docs/templates/article.jade
+#	new file:   docs/templates/index.jade
+#	new file:   docs/templates/layout.jade
+#	new file:   node_modules/.bin/acorn
+#	new file:   node_modules/.bin/acorn.cmd
+#	new file:   node_modules/.bin/atob
+#	new file:   node_modules/.bin/atob.cmd
+#	new file:   node_modules/.bin/blessed
+#	new file:   node_modules/.bin/blessed.cmd
+#	new file:   node_modules/.bin/browserslist
+#	new file:   node_modules/.bin/browserslist.cmd
+#	new file:   node_modules/.bin/cleancss
+#	new file:   node_modules/.bin/cleancss.cmd
+#	new file:   node_modules/.bin/codecov
+#	new file:   node_modules/.bin/codecov.cmd
+#	new file:   node_modules/.bin/cssesc
+#	new file:   node_modules/.bin/cssesc.cmd
+#	new file:   node_modules/.bin/csso
+#	new file:   node_modules/.bin/csso.cmd
+#	new file:   node_modules/.bin/ecstatic
+#	new file:   node_modules/.bin/ecstatic.cmd
+#	new file:   node_modules/.bin/electron
+#	new file:   node_modules/.bin/electron-download
+#	new file:   node_modules/.bin/electron-download.cmd
+#	new file:   node_modules/.bin/electron.cmd
+#	new file:   node_modules/.bin/errno
+#	new file:   node_modules/.bin/errno.cmd
+#	new file:   node_modules/.bin/esparse
+#	new file:   node_modules/.bin/esparse.cmd
+#	new file:   node_modules/.bin/esvalidate
+#	new file:   node_modules/.bin/esvalidate.cmd
+#	new file:   node_modules/.bin/extract-zip
+#	new file:   node_modules/.bin/extract-zip.cmd
+#	new file:   node_modules/.bin/gh-pages
+#	new file:   node_modules/.bin/gh-pages.cmd
+#	new file:   node_modules/.bin/handlebars
+#	new file:   node_modules/.bin/handlebars.cmd
+#	new file:   node_modules/.bin/har-validator
+#	new file:   node_modules/.bin/har-validator.cmd
+#	new file:   node_modules/.bin/he
+#	new file:   node_modules/.bin/he.cmd
+#	new file:   node_modules/.bin/hs
+#	new file:   node_modules/.bin/hs.cmd
+#	new file:   node_modules/.bin/html-minifier
+#	new file:   node_modules/.bin/html-minifier.cmd
+#	new file:   node_modules/.bin/http-server
+#	new file:   node_modules/.bin/http-server.cmd
+#	new file:   node_modules/.bin/in-install
+#	new file:   node_modules/.bin/in-install.cmd
+#	new file:   node_modules/.bin/in-publish
+#	new file:   node_modules/.bin/in-publish.cmd
+#	new file:   node_modules/.bin/js-yaml
+#	new file:   node_modules/.bin/js-yaml.cmd
+#	new file:   node_modules/.bin/jsesc
+#	new file:   node_modules/.bin/jsesc.cmd
+#	new file:   node_modules/.bin/json5
+#	new file:   node_modules/.bin/json5.cmd
+#	new file:   node_modules/.bin/marked
+#	new file:   node_modules/.bin/marked.cmd
+#	new file:   node_modules/.bin/miller-rabin
+#	new file:   node_modules/.bin/miller-rabin.cmd
+#	new file:   node_modules/.bin/mime
+#	new file:   node_modules/.bin/mime.cmd
+#	new file:   node_modules/.bin/mkdirp
+#	new file:   node_modules/.bin/mkdirp.cmd
+#	new file:   node_modules/.bin/node-gyp
+#	new file:   node_modules/.bin/node-gyp.cmd
+#	new file:   node_modules/.bin/node-pre-gyp
+#	new file:   node_modules/.bin/node-pre-gyp.cmd
+#	new file:   node_modules/.bin/node-sass
+#	new file:   node_modules/.bin/node-sass.cmd
+#	new file:   node_modules/.bin/nopt
+#	new file:   node_modules/.bin/nopt.cmd
+#	new file:   node_modules/.bin/not-in-install
+#	new file:   node_modules/.bin/not-in-install.cmd
+#	new file:   node_modules/.bin/not-in-publish
+#	new file:   node_modules/.bin/not-in-publish.cmd
+#	new file:   node_modules/.bin/nugget
+#	new file:   node_modules/.bin/nugget.cmd
+#	new file:   node_modules/.bin/opener
+#	new file:   node_modules/.bin/opener.cmd
+#	new file:   node_modules/.bin/pretty-bytes
+#	new file:   node_modules/.bin/pretty-bytes.cmd
+#	new file:   node_modules/.bin/rc
+#	new file:   node_modules/.bin/rc.cmd
+#	new file:   node_modules/.bin/regjsparser
+#	new file:   node_modules/.bin/regjsparser.cmd
+#	new file:   node_modules/.bin/rimraf
+#	new file:   node_modules/.bin/rimraf.cmd
+#	new file:   node_modules/.bin/sassgraph
+#	new file:   node_modules/.bin/sassgraph.cmd
+#	new file:   node_modules/.bin/semver
+#	new file:   node_modules/.bin/semver.cmd
+#	new file:   node_modules/.bin/sha.js
+#	new file:   node_modules/.bin/sha.js.cmd
+#	new file:   node_modules/.bin/shjs
+#	new file:   node_modules/.bin/shjs.cmd
+#	new file:   node_modules/.bin/sshpk-conv
+#	new file:   node_modules/.bin/sshpk-conv.cmd
+#	new file:   node_modules/.bin/sshpk-sign
+#	new file:   node_modules/.bin/sshpk-sign.cmd
+#	new file:   node_modules/.bin/sshpk-verify
+#	new file:   node_modules/.bin/sshpk-verify.cmd
+#	new file:   node_modules/.bin/strip-indent
+#	new file:   node_modules/.bin/strip-indent.cmd
+#	new file:   node_modules/.bin/svgo
+#	new file:   node_modules/.bin/svgo.cmd
+#	new file:   node_modules/.bin/ts-node
+#	new file:   node_modules/.bin/ts-node.cmd
+#	new file:   node_modules/.bin/tsc
+#	new file:   node_modules/.bin/tsc.cmd
+#	new file:   node_modules/.bin/tslint
+#	new file:   node_modules/.bin/tslint.cmd
+#	new file:   node_modules/.bin/tsserver
+#	new file:   node_modules/.bin/tsserver.cmd
+#	new file:   node_modules/.bin/typedoc
+#	new file:   node_modules/.bin/typedoc.cmd
+#	new file:   node_modules/.bin/uglifyjs
+#	new file:   node_modules/.bin/uglifyjs.cmd
+#	new file:   node_modules/.bin/uuid
+#	new file:   node_modules/.bin/uuid.cmd
+#	new file:   node_modules/.bin/webpack
+#	new file:   node_modules/.bin/webpack-dashboard
+#	new file:   node_modules/.bin/webpack-dashboard.cmd
+#	new file:   node_modules/.bin/webpack-dev-server
+#	new file:   node_modules/.bin/webpack-dev-server.cmd
+#	new file:   node_modules/.bin/webpack.cmd
+#	new file:   node_modules/.bin/which
+#	new file:   node_modules/.bin/which.cmd
+#	new file:   node_modules/.bin/zopfli
+#	new file:   node_modules/.bin/zopfli.cmd
+#	new file:   node_modules/.bin/zopflipng
+#	new file:   node_modules/.bin/zopflipng.cmd
+#	new file:   node_modules/@angular/common/README.md
+#	new file:   node_modules/@angular/common/bundles/common-testing.umd.js
+#	new file:   node_modules/@angular/common/bundles/common.umd.js
+#	new file:   node_modules/@angular/common/bundles/common.umd.min.js
+#	new file:   node_modules/@angular/common/index.d.ts
+#	new file:   node_modules/@angular/common/index.js
+#	new file:   node_modules/@angular/common/index.js.map
+#	new file:   node_modules/@angular/common/index.metadata.json
+#	new file:   node_modules/@angular/common/package.json
+#	new file:   node_modules/@angular/common/src/common_module.d.ts
+#	new file:   node_modules/@angular/common/src/common_module.js
+#	new file:   node_modules/@angular/common/src/common_module.js.map
+#	new file:   node_modules/@angular/common/src/common_module.metadata.json
+#	new file:   node_modules/@angular/common/src/directives/index.d.ts
+#	new file:   node_modules/@angular/common/src/directives/index.js
+#	new file:   node_modules/@angular/common/src/directives/index.js.map
+#	new file:   node_modules/@angular/common/src/directives/index.metadata.json
+#	new file:   node_modules/@angular/common/src/directives/ng_class.d.ts
+#	new file:   node_modules/@angular/common/src/directives/ng_class.js
+#	new file:   node_modules/@angular/common/src/directives/ng_class.js.map
+#	new file:   node_modules/@angular/common/src/directives/ng_class.metadata.json
+#	new file:   node_modules/@angular/common/src/directives/ng_for.d.ts
+#	new file:   node_modules/@angular/common/src/directives/ng_for.js
+#	new file:   node_modules/@angular/common/src/directives/ng_for.js.map
+#	new file:   node_modules/@angular/common/src/directives/ng_for.metadata.json
+#	new file:   node_modules/@angular/common/src/directives/ng_if.d.ts
+#	new file:   node_modules/@angular/common/src/directives/ng_if.js
+#	new file:   node_modules/@angular/common/src/directives/ng_if.js.map
+#	new file:   node_modules/@angular/common/src/directives/ng_if.metadata.json
+#	new file:   node_modules/@angular/common/src/directives/ng_plural.d.ts
+#	new file:   node_modules/@angular/common/src/directives/ng_plural.js
+#	new file:   node_modules/@angular/common/src/directives/ng_plural.js.map
+#	new file:   node_modules/@angular/common/src/directives/ng_plural.metadata.json
+#	new file:   node_modules/@angular/common/src/directives/ng_style.d.ts
+#	new file:   node_modules/@angular/common/src/directives/ng_style.js
+#	new file:   node_modules/@angular/common/src/directives/ng_style.js.map
+#	new file:   node_modules/@angular/common/src/directives/ng_style.metadata.json
+#	new file:   node_modules/@angular/common/src/directives/ng_switch.d.ts
+#	new file:   node_modules/@angular/common/src/directives/ng_switch.js
+#	new file:   node_modules/@angular/common/src/directives/ng_switch.js.map
+#	new file:   node_modules/@angular/common/src/directives/ng_switch.metadata.json
+#	new file:   node_modules/@angular/common/src/directives/ng_template_outlet.d.ts
+#	new file:   node_modules/@angular/common/src/directives/ng_template_outlet.js
+#	new file:   node_modules/@angular/common/src/directives/ng_template_outlet.js.map
+#	new file:   node_modules/@angular/common/src/directives/ng_template_outlet.metadata.json
+#	new file:   node_modules/@angular/common/src/facade/async.d.ts
+#	new file:   node_modules/@angular/common/src/facade/async.js
+#
+# Untracked files:
+#	README.md
+#	_VERSION
+#	node_modules/@angular/common/src/facade/async.js.map
+#	node_modules/@angular/common/src/facade/async.metadata.json
+#	node_modules/@angular/common/src/facade/collection.d.ts
+#	node_modules/@angular/common/src/facade/collection.js
+#	node_modules/@angular/common/src/facade/collection.js.map
+#	node_modules/@angular/common/src/facade/errors.d.ts
+#	node_modules/@angular/common/src/facade/errors.js
+#	node_modules/@angular/common/src/facade/errors.js.map
+#	node_modules/@angular/common/src/facade/intl.d.ts
+#	node_modules/@angular/common/src/facade/intl.js
+#	node_modules/@angular/common/src/facade/intl.js.map
+#	node_modules/@angular/common/src/facade/intl.metadata.json
+#	node_modules/@angular/common/src/facade/lang.d.ts
+#	node_modules/@angular/common/src/facade/lang.js
+#	node_modules/@angular/common/src/facade/lang.js.map
+#	node_modules/@angular/common/src/facade/lang.metadata.json
+#	node_modules/@angular/common/src/localization.d.ts
+#	node_modules/@angular/common/src/localization.js
+#	node_modules/@angular/common/src/localization.js.map
+#	node_modules/@angular/common/src/localization.metadata.json
+#	node_modules/@angular/common/src/location.d.ts
+#	node_modules/@angular/common/src/location.js
+#	node_modules/@angular/common/src/location.js.map
+#	node_modules/@angular/common/src/location.metadata.json
+#	node_modules/@angular/common/src/location/
+#	node_modules/@angular/common/src/pipes/
+#	node_modules/@angular/common/src/private_import_core.d.ts
+#	node_modules/@angular/common/src/private_import_core.js
+#	node_modules/@angular/common/src/private_import_core.js.map
+#	node_modules/@angular/common/src/private_import_core.metadata.json
+#	node_modules/@angular/common/testing/
+#	node_modules/@angular/compiler/
+#	node_modules/@angular/core/
+#	node_modules/@angular/forms/
+#	node_modules/@angular/http/
+#	node_modules/@angular/platform-browser-dynamic/
+#	node_modules/@angular/platform-browser/
+#	node_modules/@angular/platform-server/
+#	node_modules/@angular/router/
+#	node_modules/@angularclass/
+#	node_modules/@types/
+#	node_modules/Base64/
+#	node_modules/abbrev/
+#	node_modules/accepts/
+#	node_modules/acorn/
+#	node_modules/after/
+#	node_modules/ajv/
+#	node_modules/align-text/
+#	node_modules/alphanum-sort/
+#	node_modules/amcharts3/
+#	node_modules/amdefine/
+#	node_modules/ammap3/
+#	node_modules/angular2-template-loader/
+#	node_modules/animate.css/
+#	node_modules/ansi-regex/
+#	node_modules/ansi-styles/
+#	node_modules/any-promise/
+#	node_modules/anymatch/
+#	node_modules/aproba/
+#	node_modules/are-we-there-yet/
+#	node_modules/argparse/
+#	node_modules/argv/
+#	node_modules/arr-diff/
+#	node_modules/arr-flatten/
+#	node_modules/array-find-index/
+#	node_modules/array-flatten/
+#	node_modules/array-index/
+#	node_modules/array-union/
+#	node_modules/array-uniq/
+#	node_modules/array-unique/
+#	node_modules/arraybuffer.slice/
+#	node_modules/arrify/
+#	node_modules/asn1.js/
+#	node_modules/asn1/
+#	node_modules/assert-plus/
+#	node_modules/assert/
+#	node_modules/assets-webpack-plugin/
+#	node_modules/async-each/
+#	node_modules/async-foreach/
+#	node_modules/async/
+#	node_modules/asynckit/
+#	node_modules/atob/
+#	node_modules/autoprefixer/
+#	node_modules/awesome-typescript-loader/
+#	node_modules/aws-sign2/
+#	node_modules/aws4/
+#	node_modules/babel-code-frame/
+#	node_modules/backo2/
+#	node_modules/balanced-match/
+#	node_modules/base64-arraybuffer/
+#	node_modules/base64-js/
+#	node_modules/base64id/
+#	node_modules/batch/
+#	node_modules/bcrypt-pbkdf/
+#	node_modules/benchmark/
+#	node_modules/better-assert/
+#	node_modules/big.js/
+#	node_modules/binary-extensions/
+#	node_modules/blessed/
+#	node_modules/blob/
+#	node_modules/block-stream/
+#	node_modules/bluebird/
+#	node_modules/bn.js/
+#	node_modules/boolbase/
+#	node_modules/boom/
+#	node_modules/bootstrap-loader/
+#	node_modules/bootstrap/
+#	node_modules/brace-expansion/
+#	node_modules/braces/
+#	node_modules/brorand/
+#	node_modules/browserify-aes/
+#	node_modules/browserify-cipher/
+#	node_modules/browserify-des/
+#	node_modules/browserify-rsa/
+#	node_modules/browserify-sign/
+#	node_modules/browserify-zlib/
+#	node_modules/browserslist/
+#	node_modules/buffer-shims/
+#	node_modules/buffer-xor/
+#	node_modules/buffer/
+#	node_modules/builtin-modules/
+#	node_modules/bytes/
+#	node_modules/callsite/
+#	node_modules/camel-case/
+#	node_modules/camelcase-keys/
+#	node_modules/camelcase/
+#	node_modules/caniuse-db/
+#	node_modules/caseless/
+#	node_modules/center-align/
+#	node_modules/chalk/
+#	node_modules/change-case/
+#	node_modules/charenc/
+#	node_modules/chart.js/
+#	node_modules/chartist/
+#	node_modules/chokidar/
+#	node_modules/cipher-base/
+#	node_modules/ckeditor/
+#	node_modules/clap/
+#	node_modules/clean-css/
+#	node_modules/cliui/
+#	node_modules/clone/
+#	node_modules/co/
+#	node_modules/coa/
+#	node_modules/code-point-at/
+#	node_modules/codecov/
+#	node_modules/codelyzer/
+#	node_modules/collections/
+#	node_modules/color-convert/
+#	node_modules/color-name/
+#	node_modules/color-string/
+#	node_modules/color/
+#	node_modules/colormin/
+#	node_modules/colors/
+#	node_modules/combined-stream/
+#	node_modules/commander/
+#	node_modules/component-bind/
+#	node_modules/component-emitter/
+#	node_modules/component-inherit/
+#	node_modules/compressible/
+#	node_modules/compression-webpack-plugin/
+#	node_modules/compression/
+#	node_modules/concat-map/
+#	node_modules/concat-stream/
+#	node_modules/connect-history-api-fallback/
+#	node_modules/console-browserify/
+#	node_modules/console-control-strings/
+#	node_modules/constant-case/
+#	node_modules/constants-browserify/
+#	node_modules/content-disposition/
+#	node_modules/content-type/
+#	node_modules/convert-source-map/
+#	node_modules/cookie-signature/
+#	node_modules/cookie/
+#	node_modules/copy-webpack-plugin/
+#	node_modules/core-js/
+#	node_modules/core-util-is/
+#	node_modules/corser/
+#	node_modules/cosmiconfig/
+#	node_modules/create-ecdh/
+#	node_modules/create-hash/
+#	node_modules/create-hmac/
+#	node_modules/cross-spawn/
+#	node_modules/crypt/
+#	node_modules/cryptiles/
+#	node_modules/crypto-browserify/
+#	node_modules/css-color-names/
+#	node_modules/css-loader/
+#	node_modules/css-select/
+#	node_modules/css-selector-tokenizer/
+#	node_modules/css-what/
+#	node_modules/css/
+#	node_modules/cssauron/
+#	node_modules/cssesc/
+#	node_modules/cssnano/
+#	node_modules/csso/
+#	node_modules/currently-unhandled/
+#	node_modules/d/
+#	node_modules/dashdash/
+#	node_modules/date-now/
+#	node_modules/debug/
+#	node_modules/decamelize/
+#	node_modules/deep-extend/
+#	node_modules/defaults/
+#	node_modules/defined/
+#	node_modules/delayed-stream/
+#	node_modules/delegates/
+#	node_modules/depd/
+#	node_modules/des.js/
+#	node_modules/destroy/
+#	node_modules/diff/
+#	node_modules/diffie-hellman/
+#	node_modules/dom-converter/
+#	node_modules/dom-serializer/
+#	node_modules/domain-browser/
+#	node_modules/domelementtype/
+#	node_modules/domhandler/
+#	node_modules/domutils/
+#	node_modules/dot-case/
+#	node_modules/easy-pie-chart/
+#	node_modules/ecc-jsbn/
+#	node_modules/ecstatic/
+#	node_modules/ee-first/
+#	node_modules/electron-download/
+#	node_modules/electron/
+#	node_modules/elliptic/
+#	node_modules/emojis-list/
+#	node_modules/encodeurl/
+#	node_modules/engine.io-client/
+#	node_modules/engine.io-parser/
+#	node_modules/engine.io/
+#	node_modules/enhanced-resolve/
+#	node_modules/entities/
+#	node_modules/errno/
+#	node_modules/error-ex/
+#	node_modules/es5-ext/
+#	node_modules/es6-iterator/
+#	node_modules/es6-promise/
+#	node_modules/es6-shim/
+#	node_modules/es6-symbol/
+#	node_modules/es7-reflect-metadata/
+#	node_modules/escape-html/
+#	node_modules/escape-regexp/
+#	node_modules/escape-string-regexp/
+#	node_modules/esprima/
+#	node_modules/esutils/
+#	node_modules/etag/
+#	node_modules/eventemitter3/
+#	node_modules/events/
+#	node_modules/eventsource/
+#	node_modules/evp_bytestokey/
+#	node_modules/execSync/
+#	node_modules/expand-brackets/
+#	node_modules/expand-range/
+#	node_modules/exports-loader/
+#	node_modules/expose-loader/
+#	node_modules/express/
+#	node_modules/extend/
+#	node_modules/extglob/
+#	node_modules/extract-text-webpack-plugin/
+#	node_modules/extract-zip/
+#	node_modules/extsprintf/
+#	node_modules/fastparse/
+#	node_modules/faye-websocket/
+#	node_modules/fd-slicer/
+#	node_modules/file-loader/
+#	node_modules/filename-regex/
+#	node_modules/filesize/
+#	node_modules/fill-range/
+#	node_modules/finalhandler/
+#	node_modules/find-up/
+#	node_modules/findup-sync/
+#	node_modules/flatten/
+#	node_modules/font-awesome-sass-loader/
+#	node_modules/font-awesome/
+#	node_modules/for-in/
+#	node_modules/for-own/
+#	node_modules/forever-agent/
+#	node_modules/form-data/
+#	node_modules/forwarded/
+#	node_modules/fresh/
+#	node_modules/fs-extra/
+#	node_modules/fs.realpath/
+#	node_modules/fstream-ignore/
+#	node_modules/fstream/
+#	node_modules/fullcalendar/
+#	node_modules/function-bind/
+#	node_modules/gauge/
+#	node_modules/gaze/
+#	node_modules/generate-function/
+#	node_modules/generate-object-property/
+#	node_modules/get-caller-file/
+#	node_modules/get-stdin/
+#	node_modules/getpass/
+#	node_modules/gh-pages/
+#	node_modules/glob-base/
+#	node_modules/glob-parent/
+#	node_modules/glob/
+#	node_modules/globby/
+#	node_modules/globule/
+#	node_modules/google-maps/
+#	node_modules/graceful-fs/
+#	node_modules/graceful-readlink/
+#	node_modules/handle-thing/
+#	node_modules/handlebars/
+#	node_modules/har-validator/
+#	node_modules/has-ansi/
+#	node_modules/has-binary/
+#	node_modules/has-color/
+#	node_modules/has-cors/
+#	node_modules/has-flag/
+#	node_modules/has-unicode/
+#	node_modules/has/
+#	node_modules/hash.js/
+#	node_modules/hawk/
+#	node_modules/he/
+#	node_modules/header-case/
+#	node_modules/highlight.js/
+#	node_modules/hoek/
+#	node_modules/home-path/
+#	node_modules/hosted-git-info/
+#	node_modules/hpack.js/
+#	node_modules/html-comment-regex/
+#	node_modules/html-minifier/
+#	node_modules/html-webpack-plugin/
+#	node_modules/htmlparser2/
+#	node_modules/http-browserify/
+#	node_modules/http-deceiver/
+#	node_modules/http-errors/
+#	node_modules/http-proxy-middleware/
+#	node_modules/http-proxy/
+#	node_modules/http-server/
+#	node_modules/http-signature/
+#	node_modules/https-browserify/
+#	node_modules/icss-replace-symbols/
+#	node_modules/ie-shim/
+#	node_modules/ieee754/
+#	node_modules/imports-loader/
+#	node_modules/in-publish/
+#	node_modules/indent-string/
+#	node_modules/indexes-of/
+#	node_modules/indexof/
+#	node_modules/inflight/
+#	node_modules/inherits/
+#	node_modules/ini/
+#	node_modules/interpret/
+#	node_modules/invert-kv/
+#	node_modules/ionicons/
+#	node_modules/ipaddr.js/
+#	node_modules/is-absolute-url/
+#	node_modules/is-arrayish/
+#	node_modules/is-binary-path/
+#	node_modules/is-buffer/
+#	node_modules/is-builtin-module/
+#	node_modules/is-dotfile/
+#	node_modules/is-electron-renderer/
+#	node_modules/is-equal-shallow/
+#	node_modules/is-extendable/
+#	node_modules/is-extglob/
+#	node_modules/is-finite/
+#	node_modules/is-fullwidth-code-point/
+#	node_modules/is-glob/
+#	node_modules/is-lower-case/
+#	node_modules/is-my-json-valid/
+#	node_modules/is-number/
+#	node_modules/is-plain-obj/
+#	node_modules/is-posix-bracket/
+#	node_modules/is-primitive/
+#	node_modules/is-property/
+#	node_modules/is-svg/
+#	node_modules/is-typedarray/
+#	node_modules/is-upper-case/
+#	node_modules/is-utf8/
+#	node_modules/isarray/
+#	node_modules/isexe/
+#	node_modules/isobject/
+#	node_modules/isstream/
+#	node_modules/jodid25519/
+#	node_modules/jquery-slimscroll/
+#	node_modules/jquery/
+#	node_modules/js-base64/
+#	node_modules/js-tokens/
+#	node_modules/js-yaml/
+#	node_modules/jsbn/
+#	node_modules/jsesc/
+#	node_modules/json-loader/
+#	node_modules/json-schema/
+#	node_modules/json-stable-stringify/
+#	node_modules/json-stringify-safe/
+#	node_modules/json3/
+#	node_modules/json5/
+#	node_modules/jsonfile/
+#	node_modules/jsonify/
+#	node_modules/jsonpointer/
+#	node_modules/jsprim/
+#	node_modules/kind-of/
+#	node_modules/klaw/
+#	node_modules/lazy-cache/
+#	node_modules/lcid/
+#	node_modules/leaflet-map/
+#	node_modules/leaflet/
+#	node_modules/load-json-file/
+#	node_modules/loader-runner/
+#	node_modules/loader-utils/
+#	node_modules/lodash._arraycopy/
+#	node_modules/lodash._arrayeach/
+#	node_modules/lodash._baseassign/
+#	node_modules/lodash._basecallback/
+#	node_modules/lodash._basecopy/
+#	node_modules/lodash._baseeach/
+#	node_modules/lodash._basefind/
+#	node_modules/lodash._basefindindex/
+#	node_modules/lodash._basefor/
+#	node_modules/lodash._baseisequal/
+#	node_modules/lodash._bindcallback/
+#	node_modules/lodash._createassigner/
+#	node_modules/lodash._createcompounder/
+#	node_modules/lodash._getnative/
+#	node_modules/lodash._isiterateecall/
+#	node_modules/lodash._root/
+#	node_modules/lodash.assign/
+#	node_modules/lodash.camelcase/
+#	node_modules/lodash.clonedeep/
+#	node_modules/lodash.deburr/
+#	node_modules/lodash.defaults/
+#	node_modules/lodash.find/
+#	node_modules/lodash.indexof/
+#	node_modules/lodash.isarguments/
+#	node_modules/lodash.isarray/
+#	node_modules/lodash.isequal/
+#	node_modules/lodash.isplainobject/
+#	node_modules/lodash.istypedarray/
+#	node_modules/lodash.keys/
+#	node_modules/lodash.keysin/
+#	node_modules/lodash.merge/
+#	node_modules/lodash.pairs/
+#	node_modules/lodash.restparam/
+#	node_modules/lodash.toplainobject/
+#	node_modules/lodash.words/
+#	node_modules/lodash/
+#	node_modules/longest/
+#	node_modules/loud-rejection/
+#	node_modules/lower-case-first/
+#	node_modules/lower-case/
+#	node_modules/lru-cache/
+#	node_modules/macaddress/
+#	node_modules/make-error/
+#	node_modules/map-obj/
+#	node_modules/marked/
+#	node_modules/math-expression-evaluator/
+#	node_modules/md5/
+#	node_modules/media-typer/
+#	node_modules/memory-fs/
+#	node_modules/meow/
+#	node_modules/merge-descriptors/
+#	node_modules/methods/
+#	node_modules/micromatch/
+#	node_modules/miller-rabin/
+#	node_modules/mime-db/
+#	node_modules/mime-types/
+#	node_modules/mime/
+#	node_modules/mimeparse/
+#	node_modules/minimalistic-assert/
+#	node_modules/minimatch/
+#	node_modules/minimist/
+#	node_modules/mkdirp/
+#	node_modules/moment/
+#	node_modules/ms/
+#	node_modules/nan/
+#	node_modules/ncname/
+#	node_modules/negotiator/
+#	node_modules/ng2-bootstrap/
+#	node_modules/ng2-ckeditor/
+#	node_modules/ng2-datepicker/
+#	node_modules/ng2-smart-table/
+#	node_modules/ng2-tree/
+#	node_modules/ng2-uploader/
+#	node_modules/no-case/
+#	node_modules/node-dir/
+#	node_modules/node-gyp/
+#	node_modules/node-libs-browser/
+#	node_modules/node-pre-gyp/
+#	node_modules/node-sass/
+#	node_modules/node-uuid/
+#	node_modules/node-zopfli/
+#	node_modules/nopt/
+#	node_modules/normalize-package-data/
+#	node_modules/normalize-path/
+#	node_modules/normalize-range/
+#	node_modules/normalize-url/
+#	node_modules/normalize.css/
+#	node_modules/npmlog/
+#	node_modules/nth-check/
+#	node_modules/nugget/
+#	node_modules/num2fraction/
+#	node_modules/number-is-nan/
+#	node_modules/oauth-sign/
+#	node_modules/object-assign/
+#	node_modules/object-component/
+#	node_modules/object-keys/
+#	node_modules/object.omit/
+#	node_modules/obuf/
+#	node_modules/on-finished/
+#	node_modules/on-headers/
+#	node_modules/once/
+#	node_modules/opener/
+#	node_modules/opn/
+#	node_modules/optimist/
+#	node_modules/options/
+#	node_modules/original/
+#	node_modules/os-browserify/
+#	node_modules/os-homedir/
+#	node_modules/os-locale/
+#	node_modules/os-tmpdir/
+#	node_modules/osenv/
+#	node_modules/pako/
+#	node_modules/param-case/
+#	node_modules/parse-asn1/
+#	node_modules/parse-glob/
+#	node_modules/parse-json/
+#	node_modules/parse5/
+#	node_modules/parsejson/
+#	node_modules/parseqs/
+#	node_modules/parseuri/
+#	node_modules/parseurl/
+#	node_modules/pascal-case/
+#	node_modules/path-array/
+#	node_modules/path-browserify/
+#	node_modules/path-case/
+#	node_modules/path-exists/
+#	node_modules/path-is-absolute/
+#	node_modules/path-to-regexp/
+#	node_modules/path-type/
+#	node_modules/pbkdf2-compat/
+#	node_modules/pbkdf2/
+#	node_modules/pend/
+#	node_modules/pify/
+#	node_modules/pinkie-promise/
+#	node_modules/pinkie/
+#	node_modules/portfinder/
+#	node_modules/postcss-calc/
+#	node_modules/postcss-colormin/
+#	node_modules/postcss-convert-values/
+#	node_modules/postcss-discard-comments/
+#	node_modules/postcss-discard-duplicates/
+#	node_modules/postcss-discard-empty/
+#	node_modules/postcss-discard-overridden/
+#	node_modules/postcss-discard-unused/
+#	node_modules/postcss-filter-plugins/
+#	node_modules/postcss-load-config/
+#	node_modules/postcss-load-options/
+#	node_modules/postcss-load-plugins/
+#	node_modules/postcss-loader/
+#	node_modules/postcss-merge-idents/
+#	node_modules/postcss-merge-longhand/
+#	node_modules/postcss-merge-rules/
+#	node_modules/postcss-message-helpers/
+#	node_modules/postcss-minify-font-values/
+#	node_modules/postcss-minify-gradients/
+#	node_modules/postcss-minify-params/
+#	node_modules/postcss-minify-selectors/
+#	node_modules/postcss-modules-extract-imports/
+#	node_modules/postcss-modules-local-by-default/
+#	node_modules/postcss-modules-scope/
+#	node_modules/postcss-modules-values/
+#	node_modules/postcss-normalize-charset/
+#	node_modules/postcss-normalize-url/
+#	node_modules/postcss-ordered-values/
+#	node_modules/postcss-reduce-idents/
+#	node_modules/postcss-reduce-initial/
+#	node_modules/postcss-reduce-transforms/
+#	node_modules/postcss-selector-parser/
+#	node_modules/postcss-svgo/
+#	node_modules/postcss-unique-selectors/
+#	node_modules/postcss-value-parser/
+#	node_modules/postcss-zindex/
+#	node_modules/postcss/
+#	node_modules/prepend-http/
+#	node_modules/preserve/
+#	node_modules/pretty-bytes/
+#	node_modules/pretty-error/
+#	node_modules/process-nextick-args/
+#	node_modules/process/
+#	node_modules/progress-stream/
+#	node_modules/progress/
+#	node_modules/proxy-addr/
+#	node_modules/prr/
+#	node_modules/pseudomap/
+#	node_modules/public-encrypt/
+#	node_modules/punycode/
+#	node_modules/q-io/
+#	node_modules/q/
+#	node_modules/qs/
+#	node_modules/query-string/
+#	node_modules/querystring-es3/
+#	node_modules/querystring/
+#	node_modules/querystringify/
+#	node_modules/randomatic/
+#	node_modules/randombytes/
+#	node_modules/range-parser/
+#	node_modules/raw-loader/
+#	node_modules/rc/
+#	node_modules/read-pkg-up/
+#	node_modules/read-pkg/
+#	node_modules/readable-stream/
+#	node_modules/readdirp/
+#	node_modules/rechoir/
+#	node_modules/redent/
+#	node_modules/reduce-css-calc/
+#	node_modules/reduce-function-call/
+#	node_modules/reflect-metadata/
+#	node_modules/regenerate/
+#	node_modules/regex-cache/
+#	node_modules/regexpu-core/
+#	node_modules/regjsgen/
+#	node_modules/regjsparser/
+#	node_modules/relateurl/
+#	node_modules/renderkid/
+#	node_modules/repeat-element/
+#	node_modules/repeat-string/
+#	node_modules/repeating/
+#	node_modules/request/
+#	node_modules/require-directory/
+#	node_modules/require-from-string/
+#	node_modules/require-main-filename/
+#	node_modules/requires-port/
+#	node_modules/resolve-url-loader/
+#	node_modules/resolve-url/
+#	node_modules/resolve/
+#	node_modules/rework-visit/
+#	node_modules/rework/
+#	node_modules/right-align/
+#	node_modules/rimraf/
+#	node_modules/ripemd160/
+#	node_modules/rxjs/
+#	node_modules/sass-graph/
+#	node_modules/sass-loader/
+#	node_modules/sax/
+#	node_modules/script-ext-html-webpack-plugin/
+#	node_modules/select-hose/
+#	node_modules/semver/
+#	node_modules/send/
+#	node_modules/sentence-case/
+#	node_modules/serve-index/
+#	node_modules/serve-static/
+#	node_modules/set-blocking/
+#	node_modules/set-immediate-shim/
+#	node_modules/setprototypeof/
+#	node_modules/sha.js/
+#	node_modules/shelljs/
+#	node_modules/signal-exit/
+#	node_modules/single-line-log/
+#	node_modules/snake-case/
+#	node_modules/sntp/
+#	node_modules/socket.io-adapter/
+#	node_modules/socket.io-client/
+#	node_modules/socket.io-parser/
+#	node_modules/socket.io/
+#	node_modules/sockjs-client/
+#	node_modules/sockjs/
+#	node_modules/sort-keys/
+#	node_modules/source-list-map/
+#	node_modules/source-map-loader/
+#	node_modules/source-map-resolve/
+#	node_modules/source-map-support/
+#	node_modules/source-map-url/
+#	node_modules/source-map/
+#	node_modules/spdx-correct/
+#	node_modules/spdx-expression-parse/
+#	node_modules/spdx-license-ids/
+#	node_modules/spdy-transport/
+#	node_modules/spdy/
+#	node_modules/speedometer/
+#	node_modules/sprintf-js/
+#	node_modules/sshpk/
+#	node_modules/statuses/
+#	node_modules/stream-browserify/
+#	node_modules/strict-uri-encode/
+#	node_modules/string-replace-loader/
+#	node_modules/string-width/
+#	node_modules/string_decoder/
+#	node_modules/stringstream/
+#	node_modules/strip-ansi/
+#	node_modules/strip-bom/
+#	node_modules/strip-indent/
+#	node_modules/strip-json-comments/
+#	node_modules/style-loader/
+#	node_modules/sumchecker/
+#	node_modules/supports-color/
+#	node_modules/svgo/
+#	node_modules/swap-case/
+#	node_modules/symbol-observable/
+#	node_modules/systemjs/
+#	node_modules/tapable/
+#	node_modules/tar-pack/
+#	node_modules/tar/
+#	node_modules/temp/
+#	node_modules/tether/
+#	node_modules/throttleit/
+#	node_modules/through/
+#	node_modules/through2/
+#	node_modules/timers-browserify/
+#	node_modules/title-case/
+#	node_modules/to-array/
+#	node_modules/to-string-loader/
+#	node_modules/toposort/
+#	node_modules/tough-cookie/
+#	node_modules/trim-newlines/
+#	node_modules/ts-helpers/
+#	node_modules/ts-node/
+#	node_modules/tsconfig/
+#	node_modules/tslint-loader/
+#	node_modules/tslint/
+#	node_modules/tty-browserify/
+#	node_modules/tunnel-agent/
+#	node_modules/tweetnacl/
+#	node_modules/type-is/
+#	node_modules/typedarray/
+#	node_modules/typedoc-default-themes/
+#	node_modules/typedoc/
+#	node_modules/typescript/
+#	node_modules/uglify-js/
+#	node_modules/uglify-to-browserify/
+#	node_modules/uid-number/
+#	node_modules/ultron/
+#	node_modules/underscore.string/
+#	node_modules/union/
+#	node_modules/uniq/
+#	node_modules/uniqid/
+#	node_modules/uniqs/
+#	node_modules/unpipe/
+#	node_modules/upper-case-first/
+#	node_modules/upper-case/
+#	node_modules/urix/
+#	node_modules/url-join/
+#	node_modules/url-loader/
+#	node_modules/url-parse/
+#	node_modules/url/
+#	node_modules/url2/
+#	node_modules/urlgrey/
+#	node_modules/util-deprecate/
+#	node_modules/util/
+#	node_modules/utila/
+#	node_modules/utils-merge/
+#	node_modules/uuid/
+#	node_modules/validate-npm-package-license/
+#	node_modules/vary/
+#	node_modules/vendors/
+#	node_modules/verror/
+#	node_modules/vm-browserify/
+#	node_modules/watchpack/
+#	node_modules/wbuf/
+#	node_modules/weak-map/
+#	node_modules/webpack-core/
+#	node_modules/webpack-dashboard/
+#	node_modules/webpack-dev-middleware/
+#	node_modules/webpack-dev-server/
+#	node_modules/webpack-md5-hash/
+#	node_modules/webpack-merge/
+#	node_modules/webpack-sources/
+#	node_modules/webpack/
+#	node_modules/websocket-driver/
+#	node_modules/websocket-extensions/
+#	node_modules/when/
+#	node_modules/whet.extend/
+#	node_modules/which-module/
+#	node_modules/which/
+#	node_modules/wide-align/
+#	node_modules/window-size/
+#	node_modules/wordwrap/
+#	node_modules/wrap-ansi/
+#	node_modules/wrappy/
+#	node_modules/wrench/
+#	node_modules/ws/
+#	node_modules/wtf-8/
+#	node_modules/xml-char-classes/
+#	node_modules/xmlhttprequest-ssl/
+#	node_modules/xtend/
+#	node_modules/y18n/
+#	node_modules/yallist/
+#	node_modules/yargs-parser/
+#	node_modules/yargs/
+#	node_modules/yauzl/
+#	node_modules/yeast/
+#	node_modules/yn/
+#	node_modules/zone.js/
+#	npm-debug.log.2077772030
+#	package.json
+#	src/
+#	tsconfig.json
+#	tslint.json
+#	typedoc.json
+#	webpack.config.js
+#
+
