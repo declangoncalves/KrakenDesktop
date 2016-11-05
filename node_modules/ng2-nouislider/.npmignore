@@ -1,0 +1,8 @@
+node_modules/
+test/
+typings/
+karma*
+tsconfig.json
+tslint.json
+typings.json
+webpack*

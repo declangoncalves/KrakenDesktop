@@ -4,6 +4,26 @@
     margin-top: 50px;
 }
 
+.select-browse-filters-card {
+    display: flex !important;
+    padding: 6px;
+}
+
+.sublet-card {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+}
+
+.sublet-card-img-main {
+    width: 100%;
+    height: auto;
+}
+
+.filter-card-row {
+    width: 100%;
+}
+
 .date-picker {
     color: #ffffff !important;
     border: 1px solid rgba(255, 255, 255, 0.6) !important;
@@ -18,7 +38,97 @@
 }
 
 .input-field {
-    font-size: 12px;
-    border-radius: 10px;
-    height: 40px;
+    font-size: 12px !important;
+    border-radius: 10px !important;
+    height: 40px !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    box-shadow: none !important;
+}
+
+.filter-card-10 {
+    width: calc(10%-16px) !important;
+    display: inline-table;
+    padding: 10px 8px;
+}
+
+.filter-card-15 {
+    width: calc(15% - 16px) !important;
+    display: inline-table;
+    padding: 10px 8px;
+}
+
+.filter-card-20 {
+    width: calc(20% - 16px) !important;
+    display: inline-table;
+    padding: 10px 8px;
+}
+
+.filter-card-25 {
+    width: calc(25% - 16px) !important;
+    display: inline-table;
+    padding: 10px 8px;
+}
+
+.filter-card-30 {
+    width: calc(30% - 16px) !important;
+    display: inline-table;
+    padding: 10px 8px;
+}
+
+.filter-card-40 {
+    width: calc(40% - 16px) !important;
+    display: inline-table;
+    padding: 10px 8px;
+}
+
+.filter-card-50 {
+    width: calc(50% - 16px) !important;
+    display: inline-table;
+    padding: 10px 8px;
+}
+
+.filter-card-60 {
+    width: calc(60% - 16px) !important;
+    display: inline-table;
+    padding: 10px 8px;
+}
+
+/* Start of Placeholder text */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255,255,255,0.7) !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255,255,255,0.7) !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255,255,255,0.7) !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255,255,255,0.7) !important;
+}
+/* End of Placeholder text */
+
+.filter-button {
+    font-size: 18px !important;
+    padding: 6px 12px;
+}
+
+.display-filters-btn {
+    cursor: pointer;
+}
+
+.sublet-price {
+    display: inline-block;
+    font-size: 24px;
+}
+
+.sublet-card-header {
+    padding: 10px 14px;
+}
+
+.sublet-roomates-count {
+    font-size: 20px;
+    float: right;
 }
