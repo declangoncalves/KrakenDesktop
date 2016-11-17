@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import { AngularFire, FirebaseObjectObservable, FirebaseListObservable } from 'angularfire2';
 
 @Component({
   selector: 'browse',
@@ -6,14 +7,18 @@ import {Component} from '@angular/core';
   styleUrls: ['./browse.styles.css']
 })
 export class BrowseComponent {
-  constructor() {}
+
+  subletPosts: FirebaseListObservable<any>;
+  postObject;
+
+  constructor(af: AngularFire) {
+    this.subletPosts = af.database.list('/sublet_posts');
+  }
 
   /********* Start of Global Variables *********/
 
   browsePageInitialized = false; // Determines whether to show the browse filter initialization scene (default should be false)
   displayFiltersCard = false; // Determines if filters card is displayed
-
-  subletsArray = [50,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5];
 
   /********* End of Global Variables *********/
 
@@ -25,5 +30,6 @@ export class BrowseComponent {
   handleDisplayFiltersButton() {
     this.displayFiltersCard = !this.displayFiltersCard;
   }
+
 
 }

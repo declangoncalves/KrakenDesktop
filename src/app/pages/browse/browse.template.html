@@ -5,6 +5,7 @@
 <!--************ Start of Initialize Search Filters Scene ************-->
 <div *ngIf="!browsePageInitialized">
     <div class="card select-default-filters-card">
+
         <div class="col-md-3">
             <h5>Location</h5>
             <input placeholder="University, city, address etc." class="form-control input-field" />
@@ -133,13 +134,13 @@
     <!--************** End of Filters Card**************-->
 
     <!--************** Start of Sublet Cards **************-->
-    <div *ngFor="let sublet of subletsArray" class="col-md-5 col-lg-4">
+    <div *ngFor="let post of subletPosts | async" class="col-md-5 col-lg-4">
         <div class="card sublet-card">
             <div class="row sublet-card-header">
-                <span class="sublet-price">$400</span>
-                <span class="sublet-roomates-count">4 <i class="ion-person-stalker"></i></span>
+                <span class="sublet-price">${{post.price}}</span>
+                <span class="sublet-roomates-count">{{post.rooms_available}} <i class="ion-person-stalker"></i></span>
             </div>
-            <img class="sublet-card-img-main" src="http://cdn.freshome.com/wp-content/uploads/2009/01/apartment-room.jpg" />
+            <img class="sublet-card-img-main" src="{{post.images}}" />
         </div>
     </div>
 

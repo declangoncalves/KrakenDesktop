@@ -4,6 +4,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
+import { AngularFireModule } from 'angularfire2';
+
+// Must export the config
+export const firebaseConfig = {
+  apiKey: "AIzaSyAVxEuvIDSfmE7a3Nr4U45x9jbMgmKZCGY",
+  authDomain: "kraken-df19a.firebaseapp.com",
+  databaseURL: "https://kraken-df19a.firebaseio.com",
+  storageBucket: "kraken-df19a.appspot.com",
+  messagingSenderId: "942377218598"
+};
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -46,7 +56,8 @@ type StoreType = {
     ReactiveFormsModule,
     NgaModule.forRoot(),
     PagesModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
