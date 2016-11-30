@@ -132,3 +132,12 @@
     font-size: 20px;
     float: right;
 }
+
+.sublet-card-title {
+    padding: 10px 5px 0px 5px;
+    text-align: center;
+}
+
+.sublet-title {
+    font-size: 15px;
+}

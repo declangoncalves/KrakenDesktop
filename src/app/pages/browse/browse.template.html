@@ -16,16 +16,16 @@
         </div>
         <div class="col-md-2">
             <h5>Sublet Length</h5>
-            <select _ngcontent-mfy-18="" class="form-control input-field">
+            <select #length [value]="filters.length" (change)="configureFilters('length', length.value)" _ngcontent-mfy-18="" class="form-control input-field">
                 <option _ngcontent-mfy-18="">Any</option>
-                <option _ngcontent-mfy-18="">4 month</option>
-                <option _ngcontent-mfy-18="">8 month</option>
-                <option _ngcontent-mfy-18="">12 month</option>
+                <option _ngcontent-mfy-18="">4</option>
+                <option _ngcontent-mfy-18="">8</option>
+                <option _ngcontent-mfy-18="">12</option>
             </select>
         </div>
         <div class="col-md-2">
             <h5>Rooms Available</h5>
-            <select _ngcontent-mfy-18="" class="form-control input-field">
+            <select #roomsAvailable [value]="filters.rooms_available" (change)="configureFilters('roomsAvailable', roomsAvailable.value)" _ngcontent-mfy-18="" class="form-control input-field">
                 <option _ngcontent-mfy-18="">Any</option>
                 <option _ngcontent-mfy-18="">1</option>
                 <option _ngcontent-mfy-18="">2</option>
@@ -60,25 +60,25 @@
             </div>
             <div class="filter-card-20">
                 <h5>Sublet Length</h5>
-                <select _ngcontent-mfy-18="" class="form-control input-field">
+                <select #length [value]="filters.length" (change)="configureFilters('length', length.value)" _ngcontent-mfy-18="" class="form-control input-field">
                     <option _ngcontent-mfy-18="">Any</option>
-                    <option _ngcontent-mfy-18="">4 month</option>
-                    <option _ngcontent-mfy-18="">8 month</option>
-                    <option _ngcontent-mfy-18="">12 month</option>
+                    <option _ngcontent-mfy-18="">4</option>
+                    <option _ngcontent-mfy-18="">8</option>
+                    <option _ngcontent-mfy-18="">12</option>
                 </select>
             </div>
             <div class="filter-card-20">
                 <h5>Rooms Available</h5>
-                <select _ngcontent-mfy-18="" class="form-control input-field">
+                <select #roomsAvailable [value]="filters.rooms_available" (change)="configureFilters('roomsAvailable', roomsAvailable.value)" _ngcontent-mfy-18="" class="form-control input-field">
                     <option _ngcontent-mfy-18="">Any</option>
-                    <option _ngcontent-mfy-18="">1+</option>
-                    <option _ngcontent-mfy-18="">2+</option>
-                    <option _ngcontent-mfy-18="">3+</option>
-                    <option _ngcontent-mfy-18="">4+</option>
-                    <option _ngcontent-mfy-18="">5+</option>
-                    <option _ngcontent-mfy-18="">6+</option>
-                    <option _ngcontent-mfy-18="">7+</option>
-                    <option _ngcontent-mfy-18="">8+</option>
+                    <option _ngcontent-mfy-18="">1</option>
+                    <option _ngcontent-mfy-18="">2</option>
+                    <option _ngcontent-mfy-18="">3</option>
+                    <option _ngcontent-mfy-18="">4</option>
+                    <option _ngcontent-mfy-18="">5</option>
+                    <option _ngcontent-mfy-18="">6</option>
+                    <option _ngcontent-mfy-18="">7</option>
+                    <option _ngcontent-mfy-18="">8</option>
                 </select>
             </div>
             <div class="filter-card-10">
@@ -96,10 +96,31 @@
             <div class="filter-card-row">
                 <div class="filter-card-30">
                     <h5>Price Range</h5>
-
+                    <span>{{priceSliderStartValue}} </span>
+                    <span>{{priceSliderEndValue}}</span>
+                    <ng2-slider 
+                        min="0"
+                        max="2000"
+                        startValue="0"
+                        endValue="1000"
+                        stepValue="25"
+                        [normalHandlerStyle]="{ }"
+                        [slidingHandlerStyle]="{}"
+                        (onRangeChanged)="priceSliderChanged($event)">
+                    </ng2-slider>
                 </div>
                 <div class="filter-card-30">
                     <h5>Distance from Campus</h5>
+                    <span>{{distanceSliderValue}}</span>
+                    <ng2-slider 
+                        min="0"
+                        max="20000"
+                        value="10000"
+                        stepValue="100"
+                        [normalHandlerStyle]="{ }"
+                        [slidingHandlerStyle]="{}"
+                        (onRangeChanged)="distanceSliderChanged($event)">
+                    </ng2-slider>
 
                 </div>
                 <div class="filter-card-15">
@@ -134,13 +155,16 @@
     <!--************** End of Filters Card**************-->
 
     <!--************** Start of Sublet Cards **************-->
-    <div *ngFor="let post of subletPosts | async" class="col-md-5 col-lg-4">
+    <div *ngFor="let post of filteredSubletsArray; let imageIndex = index" class="col-md-5 col-lg-4">
         <div class="card sublet-card">
             <div class="row sublet-card-header">
                 <span class="sublet-price">${{post.price}}</span>
                 <span class="sublet-roomates-count">{{post.rooms_available}} <i class="ion-person-stalker"></i></span>
             </div>
             <img class="sublet-card-img-main" src="{{post.images}}" />
+            <div class="sublet-card-title">
+                <h5 class="sublet-title">{{post.title}}</h5>
+            </div>
         </div>
     </div>
 

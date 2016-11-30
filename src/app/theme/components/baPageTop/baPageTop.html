@@ -1,15 +1,27 @@
 <div class="page-top clearfix" baScrollPosition maxHeight="50" (scrollChange)="scrolledChanged($event)"
      [ngClass]="{scrolled: isScrolled}">
-  <a routerLink="/pages/dashboard" class="al-logo clearfix"><span>Project </span>Kraken</a>
-  <a href (click)="toggleMenu()" class="collapse-menu-link ion-navicon"></a>
+  <a routerLink="/pages/dashboard" class="al-logo clearfix"><img class="navbar-logo" src="../../../../../assets/icon/logo.svg" />Kraken</a>
+  <!--<a href (click)="toggleMenu()" class="collapse-menu-link ion-navicon"></a>-->
 
+  <div class="navbar-page-links">
+    <a routerLink="/pages/browse"><p (click)="navigateToPage()" class="navbar-text">BROWSE</p></a>
+    <p class="navbar-page-text-lines"> | </p>
+    <a routerLink="/pages/browse"><p class="navbar-text">POST</p></a>
+    <p class="navbar-page-text-lines"> | </p>
+    <a routerLink="/pages/browse"><p class="navbar-text">FAVOURITES</p></a>
+  </div>
+<!--
   <div class="search">
     <i class="ion-ios-search-strong" ng-click="startSearch()"></i>
     <input id="searchInput" type="text" placeholder="Search for...">
-  </div>
+  </div>-->
 
-  <div class="user-profile clearfix">
-    <div class="dropdown al-user-profile">
+  <div class="login-links">
+    <a routerLink="/register"><p class="navbar-text">REGISTER</p></a>
+    <p class="navbar-page-text-lines"> | </p>
+    <a routerLink="/login"><p class="navbar-text">LOGIN</p></a>
+
+    <!--<div class="dropdown al-user-profile">
       <a class="profile-toggle-link dropdown-toggle" id="user-profile-dd" data-toggle="dropdown" aria-expanded="false">
         <img src="{{ ( 'Nasta' | baProfilePicture ) }}">
       </a>
@@ -20,6 +32,7 @@
         <li class="dropdown-item"><a href class="signout"><i class="fa fa-power-off"></i>Sign out</a></li>
       </ul>
     </div>
-    <ba-msg-center></ba-msg-center>
+    <ba-msg-center></ba-msg-center>-->
   </div>
+
 </div>

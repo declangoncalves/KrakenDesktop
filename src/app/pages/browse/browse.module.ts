@@ -5,6 +5,10 @@ import { routing } from './browse.routing';
 import { DatePicker } from 'ng2-datepicker/ng2-datepicker';
 import { FormsModule }   from '@angular/forms';
 import { AngularFireModule } from 'angularfire2';
+import { Ng2SliderComponent } from 'ng2-slider-component/ng2-slider.component';
+import { SlideAbleDirective } from 'ng2-slideable-directive/slideable.directive';
+import { Ng2StyledDirective } from 'ng2-styled-directive/ng2-styled.directive';
+
 
 // Must export the config
 export const firebaseConfig = {
@@ -24,7 +28,14 @@ export const firebaseConfig = {
   ],
   declarations: [
     BrowseComponent,
-    DatePicker
+    DatePicker,
+    SlideAbleDirective,
+    Ng2StyledDirective,
+    Ng2SliderComponent
+  ],
+  exports: [
+    Ng2SliderComponent,
+    Ng2StyledDirective
   ]
 })
 export default class BrowseModule {}

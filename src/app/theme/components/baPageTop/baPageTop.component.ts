@@ -1,4 +1,6 @@
 import {Component, ViewEncapsulation} from '@angular/core';
+import {Router, Routes, NavigationEnd} from '@angular/router';
+import {Subscription} from 'rxjs/Rx';
 
 import {GlobalState} from '../../../global.state';
 
@@ -13,7 +15,7 @@ export class BaPageTop {
   public isScrolled:boolean = false;
   public isMenuCollapsed:boolean = false;
 
-  constructor(private _state:GlobalState) {
+  constructor(private _state:GlobalState, private _router: Router) {
     this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
       this.isMenuCollapsed = isCollapsed;
     });
@@ -28,4 +30,13 @@ export class BaPageTop {
   public scrolledChanged(isScrolled) {
     this.isScrolled = isScrolled;
   }
+
+  /**** Routing and Navigation ****/
+  public navigateToPage() {
+    console.log('Navigating to...')
+    // this._router.navigateByUrl('/pages/browse');
+  }
+
+  /********************************/
+
 }

@@ -1,6 +1,15 @@
 @import '../../sass/conf/conf';
 @import '../../components/baMsgCenter/baMsgCenter';
 
+/***** Fonts *****/
+
+@font-face {
+    font-family: 'Moderne-Sans';
+    src: url('../../../../assets/fonts/Moderne-Sans/MODERNE SANS.ttf');
+}
+
+/*****************/
+
 .page-top {
   background-color: $sidebar;
   position: fixed;
@@ -23,7 +32,7 @@
 }
 
 a.al-logo {
-  color: $sidebar-text;
+  color: #fff !important;
   display: block;
   font-size: 24px;
   font-family: $font-family;
@@ -35,6 +44,10 @@ a.al-logo {
   span {
     color: $primary;
   }
+}
+
+a.al-logo:hover {
+  color: #00abff !important;
 }
 
 .user-profile {
@@ -180,3 +193,43 @@ a.collapse-menu-link {
   cursor: pointer;
 }
 
+
+/***** Custom Stylings *****/
+
+.navbar-text {
+  font-family: 'Moderne-Sans';
+  font-size: 14px;
+  margin: 0 8px !important;
+  display: inline-flex;
+  color: #fff;
+}
+
+.navbar-text:hover {
+  color: #00abff;
+  cursor: pointer;
+}
+
+.login-links {
+  float: right;
+  margin-top: 24px;
+  display: inline-flex;
+}
+
+.navbar-page-links {
+  margin-top: 24px;
+  display: inline-flex;
+  margin-left: 24px;
+}
+
+.navbar-page-text-lines {
+  font-family: 'Moderne-Sans';
+  font-size: 20px;
+  margin: 0 8px !important;
+}
+
+.navbar-logo {
+    height: 34px;
+    margin-right: 10px;
+}
+
+/***************************/
